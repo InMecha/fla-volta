@@ -52,11 +52,16 @@ Tested on V100-SXM2-32GB, Qwen3.5-2B, 200 tokens:
 
 Kernel-level speedup is ~3x over PyTorch fallback. End-to-end improvement is limited by HuggingFace generate() Python overhead. For maximum inference speed on V100, use llama.cpp with GGUF.
 
+Theoretically this should give you about 100tps on a Gated DeltaNet transformer model for a model that fits on a single V100 GPU 35GB. Realistically you will probably be CPU/python bound as we profiled that the V100 GPU with the modified CU code crunches the tokens so fast the TPS becomes CPU bound, like 10%/90% split (10% GPU and 90% CPU).
+
 ## License
 
 The recurrent GDN kernel is adapted from llama.cpp (MIT License).
+
 Thanks to Georgi Gerganov for his work.
+
 Norm kernel is original work.
 
 AGPL-3.0 — INMECHA INC, 2026.
+
 VALENTIN PETROV
