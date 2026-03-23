@@ -60,7 +60,7 @@ The recurrent GDN kernel is adapted from llama.cpp (MIT License).
 
 Thanks to Georgi Gerganov for his work.
 
-Norm kernel is original work.
+Norm kernel is our original work.
 
 AGPL-3.0 — INMECHA INC, 2026.
 
