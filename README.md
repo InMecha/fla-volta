@@ -20,7 +20,7 @@ from [llama.cpp's gated_delta_net.cu](https://github.com/ggml-org/llama.cpp/blob
 
 ## Install
 
-```bash git clone https://github.com/vtpgit/fla-volta.git cd fla-volta pip install -e . --no-build-isolation ```
+```bash git clone https://github.com/InMecha/fla-volta.git cd fla-volta pip install -e . --no-build-isolation ```
 
 ## Usage
 
